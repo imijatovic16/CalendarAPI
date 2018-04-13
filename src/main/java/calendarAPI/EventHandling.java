@@ -1,5 +1,7 @@
 package calendarAPI;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,16 +54,19 @@ public class EventHandling {
 			event = new Event().setSummary("USPEH").setLocation("800 Howard St., San Francisco, CA 94103")
 					.setDescription("A chance to hear more about Google's developer products.");
 
-			startDateTime = new DateTime("2018-05-08T11:00:00Z");
+			// startDateTime = new DateTime("2018-05-08T11:15:00Z");
+			startDateTime = new DateTime("2018-02-27T12:15:00Z");
 			start = new EventDateTime().setDateTime(startDateTime).setTimeZone("Europe/Belgrade");
 			event.setStart(start);
 
-			endDateTime = new DateTime("2018-05-08T13:00:00Z");
+			// endDateTime = new DateTime("2018-05-08T13:00:00Z");
+			endDateTime = new DateTime("2018-02-27T14:00:00Z");
 			end = new EventDateTime().setDateTime(endDateTime).setTimeZone("Europe/Belgrade");
 			event.setEnd(end);
 
-			recurrence = new String[] { "RRULE:FREQ=WEEKLY;UNTIL=20180522T090000Z;BYDAY=TH",
-					"EXDATE;VALUE=DATE-TIME:20180515T090000Z,20180515T110000Z" };
+			recurrence = new String[] { "RRULE:FREQ=WEEKLY;UNTIL=20180522T090000Z;BYDAY=TU",
+					// "EXDATE;VALUE=DATE-TIME:20180515T111500Z" };
+					"EXDATE;VALUE=DATE-TIME:20180403T111500Z" };
 			event.setRecurrence(Arrays.asList(recurrence));
 
 			reminderOverrides = new EventReminder[] { new EventReminder().setMethod("email").setMinutes(24 * 60),
@@ -69,44 +74,12 @@ public class EventHandling {
 			reminders = new Event.Reminders().setUseDefault(false).setOverrides(Arrays.asList(reminderOverrides));
 			event.setReminders(reminders);
 			System.out.println(event);
-			event = service.events().insert(calendarId, event).execute();
+			// event = service.events().insert(calendarId, event).execute();
 			System.out.println(event);
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static ArrayList<DateObject> createListFromDatesJSON(JSONObject obj) {
-		ArrayList<DateObject> dates = new ArrayList<DateObject>();
-		JSONArray dateObjJSON = null;
-
-		if (obj.has("dates")) {
-			JSONObject dateObj;
-			dateObjJSON = obj.getJSONArray("dates");
-			for (int i = 0; i < dateObjJSON.length(); i++) {
-				dateObj = dateObjJSON.getJSONObject(i);
-				if (dateObj.has("start") && dateObj.has("end")) {
-					if (dateObj.getString("end").equals("") || dateObj.getString("start").equals("")) {
-						System.err.println("Greska");
-						return null;
-					}
-					dates.add(new DateObject(dateObj.getString("start"), dateObj.getString("end")));
-				} else if (dateObj.has("start") && !dateObj.has("end")) {
-					if (dateObj.getString("start").equals("")) {
-						System.err.println("Greska");
-						return null;
-					}
-					dates.add(new DateObject(dateObj.getString("start"), ""));
-				} else {
-					System.err.println("Greska");
-					return null;
-				}
-
-			}
-		}
-		System.out.println(dates);
-		return dates;
 	}
 
 	public static Event createEvenetObject(JSONObject obj) throws JSONException {
@@ -115,7 +88,7 @@ public class EventHandling {
 		String description = null;
 		String start = null;
 		String end = null;
-		String timezone = "Europe/Belgrade";
+		String timezone = "UTC";
 		JSONArray recurrence = null;
 
 		Event event = new Event();
@@ -149,7 +122,7 @@ public class EventHandling {
 			for (int i = 0; i < recurrence.length(); i++) {
 				listdata.add(recurrence.getString(i));
 			}
-			// event.setRecurrence(listdata);
+			event.setRecurrence(listdata);
 
 		}
 		System.out.println(recurrence);
@@ -162,6 +135,29 @@ public class EventHandling {
 
 	public static void main(String[] args) throws Exception {
 		new EventHandling();
+		ReadCSV r = new ReadCSV();
+		r.readFile("csv2.txt");
+		r.addRecurrence();
+		JSONArray events = r.obj.getJSONArray("events");
+		BufferedWriter bw = null;
+
+		for (
+
+		int i = 0; i < events.length(); i++) {
+			try {
+				// APPEND MODE SET HERE
+				bw = new BufferedWriter(new FileWriter("log.txt", true));
+				bw.write(events.getJSONObject(i).toString(2));
+				bw.newLine();
+				bw.flush();
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
+			System.out.println(
+					service.events().insert(calendarId, createEvenetObject(events.getJSONObject(i))).execute());
+		}
+		bw.close();
+		// new EventHandling();
 		// try {
 		// BufferedReader br = null;
 		// br = new BufferedReader(
