@@ -2,19 +2,25 @@ package calendarAPI;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 import java.util.TreeMap;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 public class ReadCSV {
-	private static String key_grupe;
 	private static TreeMap<String, ArrayList<String>> grupe = new TreeMap<String, ArrayList<String>>();
-	private static String replaceString;
-	private static String[] arr;
 	private static String[] array;
+	private static JSONObject obj = new JSONObject();
 
 	public ReadCSV() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public static TreeMap<String, ArrayList<String>> readFile(String pathToFile) {
@@ -22,47 +28,31 @@ public class ReadCSV {
 			FileReader fileReader = new FileReader(pathToFile);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line = bufferedReader.readLine();
-
+			obj.put("startSemestar", "2018-02-26");
+			obj.put("endSemestar", "2018-06-18");
+			obj.put("events", new JSONArray());
+			JSONObject event;
+			// ----Koji je dan prvi dan semestra----
 			while ((line = bufferedReader.readLine()) != null) {
-				line = line.trim();
-				array = line.split("\",\"");
-				line = line.replaceAll("\",\"", " ");
-				line = line.replaceAll("\"", "").trim();
-				// System.out.println(Arrays.toString(array));
-				ArrayList<String> value_grupe = new ArrayList<String>();
-				for (int i = 0; i < array.length; i++) {
-					String element = array[i];
-					String new_element = element.replaceAll("\"", "").trim();
-					if (i == 3) {
-						// System.out.println("OVO SU GRUPE " + array[i]);
-
-						String[] razvojene_grupe = new_element.split(",");
-						for (String ss : razvojene_grupe) {
-
-							// System.out.println(ss);
-							ss = ss.trim();
-							if (grupe.get(ss) == null) {
-								grupe.put(ss, new ArrayList<String>());
-							}
-							grupe.get(ss).add(line);
-						}
-						break;
-
-					} else {
-						value_grupe.add(element);
-					}
-					// System.out.println(element + '\t' + i);
-					// String new_element = element.replaceAll("\"", "");
-					// System.out.println(new_element);
-
+				if (!line.contains("308")) {
+					continue;
 				}
-				// replaceString += line.replaceAll("\"", "") + "\n";
+				array = line.split("\",\"");
+				event = new JSONObject();
+				System.out.println(Arrays.asList(array));
+				event.put("summary", array[0].replaceAll("\\s+", " ").replaceAll("\"", ""));
+				event.put("location", array[6].replaceAll("\\s+", " ").replaceAll("\"", ""));
+				event.put("start", array[5].split("-")[0].replaceAll("\\s+", " ").replaceAll("\"", "") + ":00");
+				event.put("end", array[5].split("-")[1].replaceAll("\\s+", " ").replaceAll("\"", "") + ":00:00");
+				event.put("description", array[1].replaceAll("\\s+", " ").replaceAll("\"", "") + "\n"
+						+ array[2].replaceAll("\\s+", " ").replaceAll("\"", ""));
+				event.put("recurrence", new JSONArray());
+				event.put("day", array[4].replaceAll("\\s+", "").replaceAll("\"", ""));
+
+				obj.append("events", event);
 			}
-			// arr = replaceString.split(",");
-			// System.out.println(Arrays.toString(arr));
-
+			System.out.println(obj.toString(2));
 			bufferedReader.close();
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -70,11 +60,105 @@ public class ReadCSV {
 		return grupe;
 	}
 
-	// public static String normalize(String input) {
-	// String output = Normalizer.normalize(input, Normalizer.Form.NFD);
-	// Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
-	//
-	// return pattern.matcher(output).replaceAll("");
-	// }
+	public static void addRecurrence() {
+		// "RRULE:FREQ=WEEKLY;COUNT=5;BYDAY=TU",
+		// "EXDATE;VALUE=DATE-TIME:20180515T090000Z"
+		// "RRULE:FREQ=WEEKLY;UNTIL=20180522T090000Z;BYDAY=TH",
+		// "EXDATE;VALUE=DATE-TIME:20180515T090000Z,20180515T110000Z"
+		// string.substring(string.length() - 1)
+		String endOfSemester = obj.getString("endSemestar");
+		JSONObject event;
+		for (int i = 0; i < obj.getJSONArray("events").length(); i++) {
+
+			String day = obj.getJSONArray("events").getJSONObject(i).getString("day");
+			String dayName = "";
+			if (day.contains("PON")) {
+				day = "MO";
+				dayName = "pon";
+			} else if (day.contains("UTO")) {
+				day = "TU";
+				dayName = "uto";
+			} else if (day.contains("SRE")) {
+				day = "WE";
+				dayName = "sre";
+			} else if (day.contains("ČET")) {
+				day = "TH";
+				dayName = "Čet";
+			} else if (day.contains("PET")) {
+				day = "FR";
+				dayName = "pet";
+			}
+			// obj.getJSONArray("events").getJSONObject(0)
+
+			obj.getJSONArray("events").getJSONObject(i).put("start", getFirstDayDateOfDate(dayName,
+					obj.getString("startSemestar"), obj.getJSONArray("events").getJSONObject(i).getString("start")));
+			obj.getJSONArray("events").getJSONObject(i).put("end", getFirstDayDateOfDate(dayName,
+					obj.getString("startSemestar"), obj.getJSONArray("events").getJSONObject(i).getString("end")));
+			System.out.println(obj);
+			String rule = "RRULE:FREQ=WEEKLY;UNTIL=" + endOfSemester + "T090000Z" + ";BYDAY=" + day;
+
+			String exdate = "EXDATE;VALUE=DATE-TIME:" + "20180515" + "T"
+					+ obj.getJSONArray("events").getJSONObject(i).getString("start").split("T")[1].split("Z")[0]
+							.replace(":", "")
+					+ "Z" + ",20180515T110000Z";
+			ArrayList<String> rec = new ArrayList<>();
+			rec.add(rule);
+			rec.add(exdate);
+			obj.getJSONArray("events").getJSONObject(i).put("recurrence", new JSONArray(rec));
+		}
+
+	}
+
+	public static void main(String[] args) {
+		getDayNameFromDate("2018-05-30");
+		getFirstDayDateOfDate("uto", "2018-02-26", "09:00:00");
+		readFile("csv2.txt");
+		addRecurrence();
+	}
+
+	public static String getFirstDayDateOfDate(String day, String startingDate, String time) {
+		Calendar c = Calendar.getInstance();
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+
+		Date startDate = null;
+		try {
+			startDate = df.parse(startingDate + " " + time);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		c.set(Calendar.HOUR_OF_DAY, 17);
+		c.setTime(startDate);
+		if (day.equalsIgnoreCase("pon")) {
+			c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+		} else if (day.equalsIgnoreCase("uto")) {
+			c.set(Calendar.DAY_OF_WEEK, Calendar.TUESDAY);
+		} else if (day.equalsIgnoreCase("sre")) {
+			c.set(Calendar.DAY_OF_WEEK, Calendar.WEDNESDAY);
+		} else if (day.equalsIgnoreCase("Čet")) {
+			c.set(Calendar.DAY_OF_WEEK, Calendar.THURSDAY);
+		} else if (day.equalsIgnoreCase("pet")) {
+			c.set(Calendar.DAY_OF_WEEK, Calendar.FRIDAY);
+		}
+		return dateToISOString(c.getTime());
+	}
+
+	public static String dateToISOString(Date date) {
+		TimeZone tz = TimeZone.getTimeZone("UTC");
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+		df.setTimeZone(tz);
+		return df.format(date);
+	}
+
+	public static String getDayNameFromDate(String date) {
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		Date startDate;
+		try {
+			startDate = df.parse(date);
+			return startDate.toString().substring(0, 3);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return "No day name";
+	}
 
 }
