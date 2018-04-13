@@ -1,1080 +1,126 @@
 {
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-28T15:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T17:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T231500Z,20180407T231500Z,20180408T231500Z,20180409T231500Z,20180430T231500Z,20180501T231500Z,20180502T231500Z"
-  ],
-  "start": "2018-02-25T23:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T13:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-26T15:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T17:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
-  ],
-  "start": "2018-03-02T10:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T12:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-28T13:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T15:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T081500Z,20180407T081500Z,20180408T081500Z,20180409T081500Z,20180430T081500Z,20180501T081500Z,20180502T081500Z"
-  ],
-  "start": "2018-02-26T08:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T10:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-26T13:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T15:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-27T16:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T18:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-27T12:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T14:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-28T15:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T17:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T231500Z,20180407T231500Z,20180408T231500Z,20180409T231500Z,20180430T231500Z,20180501T231500Z,20180502T231500Z"
-  ],
-  "start": "2018-02-25T23:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T13:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-26T15:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T17:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
-  ],
-  "start": "2018-03-02T10:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T12:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-28T13:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T15:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T081500Z,20180407T081500Z,20180408T081500Z,20180409T081500Z,20180430T081500Z,20180501T081500Z,20180502T081500Z"
-  ],
-  "start": "2018-02-26T08:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T10:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-26T13:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T15:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-27T16:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T18:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-27T12:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T14:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-28T16:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T18:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-26T12:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T14:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-26T16:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T18:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T231500Z,20180407T231500Z,20180408T231500Z,20180409T231500Z,20180430T231500Z,20180501T231500Z,20180502T231500Z"
-  ],
-  "start": "2018-03-01T23:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T13:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-28T14:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T16:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T091500Z,20180407T091500Z,20180408T091500Z,20180409T091500Z,20180430T091500Z,20180501T091500Z,20180502T091500Z"
-  ],
-  "start": "2018-02-26T09:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-25T23:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-28T16:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T18:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-26T12:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T14:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-26T16:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T18:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T231500Z,20180407T231500Z,20180408T231500Z,20180409T231500Z,20180430T231500Z,20180501T231500Z,20180502T231500Z"
-  ],
-  "start": "2018-03-01T23:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T13:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-28T14:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T16:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T091500Z,20180407T091500Z,20180408T091500Z,20180409T091500Z,20180430T091500Z,20180501T091500Z,20180502T091500Z"
-  ],
-  "start": "2018-02-26T09:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-25T23:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-28T16:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T18:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-26T12:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T14:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-26T16:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T18:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T231500Z,20180407T231500Z,20180408T231500Z,20180409T231500Z,20180430T231500Z,20180501T231500Z,20180502T231500Z"
-  ],
-  "start": "2018-03-01T23:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T13:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-28T14:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T16:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-26T14:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T16:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-27T17:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T19:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-27T13:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T15:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T091500Z,20180407T091500Z,20180408T091500Z,20180409T091500Z,20180430T091500Z,20180501T091500Z,20180502T091500Z"
-  ],
-  "start": "2018-02-26T09:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-25T23:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T041500Z,20180407T041500Z,20180408T041500Z,20180409T041500Z,20180430T041500Z,20180501T041500Z,20180502T041500Z"
-  ],
-  "start": "2018-02-28T04:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T06:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-26T12:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T02:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-28T16:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T18:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-26T12:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T14:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-26T16:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T18:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T111500Z,20180407T111500Z,20180408T111500Z,20180409T111500Z,20180430T111500Z,20180501T111500Z,20180502T111500Z"
-  ],
-  "start": "2018-03-02T11:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T13:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-28T14:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T16:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-26T14:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T16:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-27T17:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T19:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-27T13:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T15:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T091500Z,20180407T091500Z,20180408T091500Z,20180409T091500Z,20180430T091500Z,20180501T091500Z,20180502T091500Z"
-  ],
-  "start": "2018-02-26T09:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T11:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-28T16:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T18:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-02-26T12:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T14:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T161500Z,20180407T161500Z,20180408T161500Z,20180409T161500Z,20180430T161500Z,20180501T161500Z,20180502T161500Z"
-  ],
-  "start": "2018-02-26T16:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T18:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T111500Z,20180407T111500Z,20180408T111500Z,20180409T111500Z,20180430T111500Z,20180501T111500Z,20180502T111500Z"
-  ],
-  "start": "2018-03-02T11:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T13:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-28T14:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T16:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
-  ],
-  "start": "2018-02-28T10:15:00Z",
-  "description": "Vezbe\nRadovic Mihailo",
-  "location": "U4",
-  "end": "2018-02-28T12:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T091500Z,20180407T091500Z,20180408T091500Z,20180409T091500Z,20180430T091500Z,20180501T091500Z,20180502T091500Z"
-  ],
-  "start": "2018-02-26T09:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T11:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-26T14:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T16:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-27T17:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T19:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-27T13:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T15:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-28T17:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T19:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-26T13:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T15:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-26T17:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T19:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-03-02T12:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T14:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-28T15:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T17:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T111500Z,20180407T111500Z,20180408T111500Z,20180409T111500Z,20180430T111500Z,20180501T111500Z,20180502T111500Z"
-  ],
-  "start": "2018-02-28T11:15:00Z",
-  "description": "Vezbe\nRadovic Mihailo",
-  "location": "U4",
-  "end": "2018-02-28T13:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
-  ],
-  "start": "2018-02-26T10:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T12:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-26T15:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T17:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T181500Z,20180407T181500Z,20180408T181500Z,20180409T181500Z,20180430T181500Z,20180501T181500Z,20180502T181500Z"
-  ],
-  "start": "2018-02-27T18:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T20:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-27T14:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T16:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-28T17:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T19:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-26T13:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T15:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-26T17:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T19:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-03-02T12:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T14:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-28T15:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T17:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T111500Z,20180407T111500Z,20180408T111500Z,20180409T111500Z,20180430T111500Z,20180501T111500Z,20180502T111500Z"
-  ],
-  "start": "2018-02-28T11:15:00Z",
-  "description": "Vezbe\nRadovic Mihailo",
-  "location": "U4",
-  "end": "2018-02-28T13:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
-  ],
-  "start": "2018-02-26T10:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T12:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-26T15:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T17:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T181500Z,20180407T181500Z,20180408T181500Z,20180409T181500Z,20180430T181500Z,20180501T181500Z,20180502T181500Z"
-  ],
-  "start": "2018-02-27T18:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T20:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-27T14:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T16:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-28T17:15:00Z",
-  "description": "Predavanja\nVujosevic Dusan",
-  "location": "Kolarac",
-  "end": "2018-02-28T19:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
-  ],
-  "start": "2018-02-26T13:15:00Z",
-  "description": "Predavanja\nJovanovic Jelena",
-  "location": "U6",
-  "end": "2018-02-26T15:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Verovatnoca i statistika",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
-  ],
-  "start": "2018-02-26T17:15:00Z",
-  "description": "Vezbe\nJerotijevic Marija",
-  "location": "Rg7",
-  "end": "2018-02-26T19:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
-    "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
-  ],
-  "start": "2018-03-02T12:15:00Z",
-  "description": "Predavanja\nVidakovic MIlan",
-  "location": "U1",
-  "end": "2018-03-02T14:00:00Z",
-  "day": "  PET  "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-28T15:15:00Z",
-  "description": "Predavanja\nDimic Surla Bojana",
-  "location": "U3",
-  "end": "2018-02-28T17:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Softverske komponente",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
-    "EXDATE;VALUE=DATE-TIME:20180406T111500Z,20180407T111500Z,20180408T111500Z,20180409T111500Z,20180430T111500Z,20180501T111500Z,20180502T111500Z"
-  ],
-  "start": "2018-02-28T11:15:00Z",
-  "description": "Vezbe\nRadovic Mihailo",
-  "location": "U4",
-  "end": "2018-02-28T13:00:00Z",
-  "day": "    SRE    "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
-  ],
-  "start": "2018-02-26T10:15:00Z",
-  "description": "Predavanja\nLutovac Maja",
-  "location": "U1",
-  "end": "2018-02-26T12:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "WEB programiranje",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
-    "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
-  ],
-  "start": "2018-02-26T15:15:00Z",
-  "description": "Vezbe\nPluskoski Aleksandar",
-  "location": "U7",
-  "end": "2018-02-26T17:00:00Z",
-  "day": "      PON      "
-}
-{
-  "summary": "Razvoj mobilnih aplikacija",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T181500Z,20180407T181500Z,20180408T181500Z,20180409T181500Z,20180430T181500Z,20180501T181500Z,20180502T181500Z"
-  ],
-  "start": "2018-02-27T18:15:00Z",
-  "description": "Vezbe\nMedenica Igor",
-  "location": "Rg9",
-  "end": "2018-02-27T20:00:00Z",
-  "day": "     UTO     "
-}
-{
-  "summary": "Interakcija covek racunar",
-  "recurrence": [
-    "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
-    "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
-  ],
-  "start": "2018-02-27T14:15:00Z",
-  "description": "Vezbe\nRadosavljevic Nemanja",
-  "location": "U7",
-  "end": "2018-02-27T16:00:00Z",
-  "day": "     UTO     "
+  "endSemestar": "2018-06-18",
+  "startSemestar": "2018-02-26",
+  "events": [
+    {
+      "summary": "Interakcija covek racunar",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
+        "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
+      ],
+      "start": "2018-02-28T17:15:00Z",
+      "description": "Predavanja\nVujosevic Dusan",
+      "location": "Kolarac",
+      "end": "2018-02-28T19:00:00Z",
+      "day": "    SRE    "
+    },
+    {
+      "summary": "Verovatnoca i statistika",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
+        "EXDATE;VALUE=DATE-TIME:20180406T131500Z,20180407T131500Z,20180408T131500Z,20180409T131500Z,20180430T131500Z,20180501T131500Z,20180502T131500Z"
+      ],
+      "start": "2018-02-26T13:15:00Z",
+      "description": "Predavanja\nJovanovic Jelena",
+      "location": "U6",
+      "end": "2018-02-26T15:00:00Z",
+      "day": "      PON      "
+    },
+    {
+      "summary": "Verovatnoca i statistika",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
+        "EXDATE;VALUE=DATE-TIME:20180406T171500Z,20180407T171500Z,20180408T171500Z,20180409T171500Z,20180430T171500Z,20180501T171500Z,20180502T171500Z"
+      ],
+      "start": "2018-02-26T17:15:00Z",
+      "description": "Vezbe\nJerotijevic Marija",
+      "location": "Rg7",
+      "end": "2018-02-26T19:00:00Z",
+      "day": "      PON      "
+    },
+    {
+      "summary": "WEB programiranje",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=FR",
+        "EXDATE;VALUE=DATE-TIME:20180406T121500Z,20180407T121500Z,20180408T121500Z,20180409T121500Z,20180430T121500Z,20180501T121500Z,20180502T121500Z"
+      ],
+      "start": "2018-03-02T12:15:00Z",
+      "description": "Predavanja\nVidakovic MIlan",
+      "location": "U1",
+      "end": "2018-03-02T14:00:00Z",
+      "day": "  PET  "
+    },
+    {
+      "summary": "Softverske komponente",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
+        "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
+      ],
+      "start": "2018-02-28T15:15:00Z",
+      "description": "Predavanja\nDimic Surla Bojana",
+      "location": "U3",
+      "end": "2018-02-28T17:00:00Z",
+      "day": "    SRE    "
+    },
+    {
+      "summary": "Softverske komponente",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=WE",
+        "EXDATE;VALUE=DATE-TIME:20180406T111500Z,20180407T111500Z,20180408T111500Z,20180409T111500Z,20180430T111500Z,20180501T111500Z,20180502T111500Z"
+      ],
+      "start": "2018-02-28T11:15:00Z",
+      "description": "Vezbe\nRadovic Mihailo",
+      "location": "U4",
+      "end": "2018-02-28T13:00:00Z",
+      "day": "    SRE    "
+    },
+    {
+      "summary": "Razvoj mobilnih aplikacija",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
+        "EXDATE;VALUE=DATE-TIME:20180406T101500Z,20180407T101500Z,20180408T101500Z,20180409T101500Z,20180430T101500Z,20180501T101500Z,20180502T101500Z"
+      ],
+      "start": "2018-02-26T10:15:00Z",
+      "description": "Predavanja\nLutovac Maja",
+      "location": "U1",
+      "end": "2018-02-26T12:00:00Z",
+      "day": "      PON      "
+    },
+    {
+      "summary": "WEB programiranje",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=MO",
+        "EXDATE;VALUE=DATE-TIME:20180406T151500Z,20180407T151500Z,20180408T151500Z,20180409T151500Z,20180430T151500Z,20180501T151500Z,20180502T151500Z"
+      ],
+      "start": "2018-02-26T15:15:00Z",
+      "description": "Vezbe\nPluskoski Aleksandar",
+      "location": "U7",
+      "end": "2018-02-26T17:00:00Z",
+      "day": "      PON      "
+    },
+    {
+      "summary": "Razvoj mobilnih aplikacija",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
+        "EXDATE;VALUE=DATE-TIME:20180406T181500Z,20180407T181500Z,20180408T181500Z,20180409T181500Z,20180430T181500Z,20180501T181500Z,20180502T181500Z"
+      ],
+      "start": "2018-02-27T18:15:00Z",
+      "description": "Vezbe\nMedenica Igor",
+      "location": "Rg9",
+      "end": "2018-02-27T20:00:00Z",
+      "day": "     UTO     "
+    },
+    {
+      "summary": "Interakcija covek racunar",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20180618T090000Z;BYDAY=TU",
+        "EXDATE;VALUE=DATE-TIME:20180406T141500Z,20180407T141500Z,20180408T141500Z,20180409T141500Z,20180430T141500Z,20180501T141500Z,20180502T141500Z"
+      ],
+      "start": "2018-02-27T14:15:00Z",
+      "description": "Vezbe\nRadosavljevic Nemanja",
+      "location": "U7",
+      "end": "2018-02-27T16:00:00Z",
+      "day": "     UTO     "
+    }
+  ]
 }

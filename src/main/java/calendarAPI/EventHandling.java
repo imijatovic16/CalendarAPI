@@ -18,10 +18,9 @@ import com.google.api.services.calendar.model.EventReminder;
 
 public class EventHandling {
 	private static Quickstart quickstart;
-	private static Calendar service;
-	private static String calendarId = "primary";
+	public static Calendar service;
+	public static String calendarId = "primary";
 
-	@SuppressWarnings("static-access")
 	public EventHandling() {
 		quickstart = new Quickstart();
 		try {
@@ -137,51 +136,53 @@ public class EventHandling {
 	public static void main(String[] args) throws Exception {
 		new EventHandling();
 		ReadCSV r = new ReadCSV();
-		r.readFile("csv2.txt");
+		r.readFile("csv2.txt", "308", "", "");
 		r.addRecurrence();
 		JSONArray events = r.obj.getJSONArray("events");
 		BufferedWriter bw = null;
-
+		try {
+			// APPEND MODE SET HERE
+			bw = new BufferedWriter(new FileWriter("log.txt", true));
+			bw.write(r.obj.toString(2));
+			bw.newLine();
+			bw.flush();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		}
 		for (
 
-		int i = 0; i < events.length(); i++) {
-			try {
-				// APPEND MODE SET HERE
-				bw = new BufferedWriter(new FileWriter("log.txt", true));
-				bw.write(events.getJSONObject(i).toString(2));
-				bw.newLine();
-				bw.flush();
-			} catch (IOException ioe) {
-				ioe.printStackTrace();
-			}
-			System.out.println(
-					service.events().insert(calendarId, createEvenetObject(events.getJSONObject(i))).execute());
-		}
-		bw.close();
-		// new EventHandling();
-		// try {
-		// BufferedReader br = null;
-		// br = new BufferedReader(
-		// new InputStreamReader(new FileInputStream(new
-		// File("src/main/resources/schedule.json"))));
-		// JSONTokener tokener = new JSONTokener(br);
-		// JSONObject root = new JSONObject(tokener);
-		// createEvenetObject(root);
-		// // quickstart = new Quickstart();
-		// // service = quickstart.getCalendarService();
-		// // service.events().insert(calendarId,
-		// // createEvenetObject(root)).execute();
-		// // System.out.println(service.events().get(calendarId,
-		// // "qtv46g0vp68gan1mqb8i397aho").execute());
-		// br = new BufferedReader(
-		// new InputStreamReader(new FileInputStream(new
-		// File("src/main/resources/dates.json"))));
-		// tokener = new JSONTokener(br);
-		// root = new JSONObject(tokener);
-		// createListFromDatesJSON(root);
-		// } catch (JSONException e) {
-		// e.printStackTrace();
-		// }
+				int i = 0; i < events.length(); i++) {
 
+			// System.out.println(
+			// service.events().insert(calendarId,
+			// createEvenetObject(events.getJSONObject(i))).execute());
+			// }
+			// bw.close();
+			// // new EventHandling();
+			// // try {
+			// // BufferedReader br = null;
+			// // br = new BufferedReader(
+			// // new InputStreamReader(new FileInputStream(new
+			// // File("src/main/resources/schedule.json"))));
+			// // JSONTokener tokener = new JSONTokener(br);
+			// // JSONObject root = new JSONObject(tokener);
+			// // createEvenetObject(root);
+			// // // quickstart = new Quickstart();
+			// // // service = quickstart.getCalendarService();
+			// // // service.events().insert(calendarId,
+			// // // createEvenetObject(root)).execute();
+			// // // System.out.println(service.events().get(calendarId,
+			// // // "qtv46g0vp68gan1mqb8i397aho").execute());
+			// // br = new BufferedReader(
+			// // new InputStreamReader(new FileInputStream(new
+			// // File("src/main/resources/dates.json"))));
+			// // tokener = new JSONTokener(br);
+			// // root = new JSONObject(tokener);
+			// // createListFromDatesJSON(root);
+			// // } catch (JSONException e) {
+			// // e.printStackTrace();
+			// // }
+
+		}
 	}
 }

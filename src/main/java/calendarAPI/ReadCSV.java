@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.InputStreamReader;
+import java.net.URISyntaxException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -29,18 +30,25 @@ public class ReadCSV {
 	public ReadCSV() {
 	}
 
-	public static TreeMap<String, ArrayList<String>> readFile(String pathToFile) {
+	public TreeMap<String, ArrayList<String>> readFile(String pathToFile, String group, String semStart,
+			String semEnd) {
 		try {
 			FileReader fileReader = new FileReader(pathToFile);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line = bufferedReader.readLine();
-			obj.put("startSemestar", "2018-02-26");
-			obj.put("endSemestar", "2018-06-18");
+			if (semStart.equals("")) {
+				semStart = "2018-02-26";
+			}
+			if (semEnd.equals("")) {
+				semEnd = "2018-06-18";
+			}
+			obj.put("startSemestar", semStart);
+			obj.put("endSemestar", semEnd);
 			obj.put("events", new JSONArray());
 			JSONObject event;
 			// ----Koji je dan prvi dan semestra----
 			while ((line = bufferedReader.readLine()) != null) {
-				if (!line.contains("308")) {
+				if (!line.contains(group)) {
 					continue;
 				}
 				array = line.split("\",\"");
@@ -72,12 +80,7 @@ public class ReadCSV {
 		return grupe;
 	}
 
-	public static void addRecurrence() {
-		// "RRULE:FREQ=WEEKLY;COUNT=5;BYDAY=TU",
-		// "EXDATE;VALUE=DATE-TIME:20180515T090000Z"
-		// "RRULE:FREQ=WEEKLY;UNTIL=20180522T090000Z;BYDAY=TH",
-		// "EXDATE;VALUE=DATE-TIME:20180515T090000Z,20180515T110000Z"
-		// string.substring(string.length() - 1)
+	public void addRecurrence() {
 		String endOfSemester = obj.getString("endSemestar");
 		ArrayList<String> dates = readDateJSON();
 		JSONObject event;
@@ -133,14 +136,14 @@ public class ReadCSV {
 	}
 
 	public static void main(String[] args) {
-		getDayNameFromDate("2018-05-30");
-		getFirstDayDateOfDate("uto", "2018-02-26", "09:00:00");
-		readFile("csv2.txt");
-		addRecurrence();
+		// getDayNameFromDate("2018-05-30");
+		// getFirstDayDateOfDate("uto", "2018-02-26", "09:00:00");
+		// readFile("csv2.txt");
+		// addRecurrence();
 		System.out.println(obj.toString(2));
 	}
 
-	public static String getFirstDayDateOfDate(String day, String startingDate, String time) {
+	public String getFirstDayDateOfDate(String day, String startingDate, String time) {
 		Calendar c = Calendar.getInstance();
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -167,7 +170,7 @@ public class ReadCSV {
 		return dateToISOString(c.getTime());
 	}
 
-	public static String dateToISOString(Date date) {
+	public String dateToISOString(Date date) {
 		TimeZone tz = TimeZone.getTimeZone("UTC");
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
 		df.setTimeZone(tz);
@@ -178,7 +181,7 @@ public class ReadCSV {
 		return dateStr;
 	}
 
-	public static String getDayNameFromDate(String date) {
+	public String getDayNameFromDate(String date) {
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		Date startDate;
 		try {
@@ -190,14 +193,19 @@ public class ReadCSV {
 		return "No day name";
 	}
 
-	public static ArrayList<String> readDateJSON() {
+	public ArrayList<String> readDateJSON() {
 		BufferedReader br = null;
 		JSONTokener tokener;
 		JSONObject root = null;
 		try {
 
-			br = new BufferedReader(
-					new InputStreamReader(new FileInputStream(new File("src/main/resources/dates.json"))));
+			try {
+				br = new BufferedReader(new InputStreamReader(
+						new FileInputStream(new File(getClass().getResource("/dates.json").toURI()))));
+			} catch (URISyntaxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			tokener = new JSONTokener(br);
 			root = new JSONObject(tokener);
 
@@ -209,7 +217,7 @@ public class ReadCSV {
 		return createListFromDatesJSON(root);
 	}
 
-	public static ArrayList<String> createListFromDatesJSON(JSONObject obj) {
+	public ArrayList<String> createListFromDatesJSON(JSONObject obj) {
 		ArrayList<String> dates = new ArrayList<String>();
 		JSONArray dateObjJSON = null;
 
