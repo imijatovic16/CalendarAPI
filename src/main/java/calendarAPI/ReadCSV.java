@@ -23,15 +23,33 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 public class ReadCSV {
+	/**
+	 * key-value parovi gde su kljucevi nazivi grupa a njihove vrednosti su
+	 * ostali parametri iz CSV fajla
+	 */
 	private static TreeMap<String, ArrayList<String>> grupe = new TreeMap<String, ArrayList<String>>();
+	/**
+	 * niz ciji elementi predstavljaju parametre iz CSV fajla
+	 */
 	private static String[] array;
+	/**
+	 * JSON objekat ciji su atributi pocetak semestra, kraj semestra i JSONArray
+	 * svih dogadjaja
+	 */
 	public static JSONObject obj = new JSONObject();
 
 	public ReadCSV() {
 	}
 
+	/**
+	 * ucitava i stavlja u obj kada su pocetak i kraj semestra
+	 * 
+	 * @param pathToFile
+	 * @return grupe
+	 */
 	public TreeMap<String, ArrayList<String>> readFile(String pathToFile, String group, String semStart,
 			String semEnd) {
+
 		try {
 			FileReader fileReader = new FileReader(pathToFile);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -143,7 +161,17 @@ public class ReadCSV {
 		System.out.println(obj.toString(2));
 	}
 
+	/**
+	 * pronalazi prvi radni dan u odnosu na pocetak semestra i na osnovu njega
+	 * odredjuje i ostale radne dana tokom te nedelje
+	 * 
+	 * @param day
+	 * @param startingDate
+	 * @param time
+	 * @return poziva funkciju dateToISOString()
+	 */
 	public String getFirstDayDateOfDate(String day, String startingDate, String time) {
+
 		Calendar c = Calendar.getInstance();
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -169,7 +197,12 @@ public class ReadCSV {
 
 		return dateToISOString(c.getTime());
 	}
-
+	/**
+	 * formatira datum, oredjuje vremensku zonu i vraca datum tipa String
+	 * 
+	 * @param date
+	 * @return
+	 */
 	public String dateToISOString(Date date) {
 		TimeZone tz = TimeZone.getTimeZone("UTC");
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
@@ -193,7 +226,13 @@ public class ReadCSV {
 		return "No day name";
 	}
 
+	/**
+	 * ucitava datume iz JSON fajla
+	 * 
+	 * @return ucitane datume prosledjuje funkciji createListFromDatesJSON()
+	 */
 	public ArrayList<String> readDateJSON() {
+
 		BufferedReader br = null;
 		JSONTokener tokener;
 		JSONObject root = null;
@@ -216,7 +255,12 @@ public class ReadCSV {
 		}
 		return createListFromDatesJSON(root);
 	}
-
+	/**
+	 * kreira listu datuma
+	 * 
+	 * @param obj
+	 * @return
+	 */
 	public ArrayList<String> createListFromDatesJSON(JSONObject obj) {
 		ArrayList<String> dates = new ArrayList<String>();
 		JSONArray dateObjJSON = null;

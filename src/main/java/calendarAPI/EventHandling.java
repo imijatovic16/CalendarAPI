@@ -17,10 +17,20 @@ import com.google.api.services.calendar.model.EventDateTime;
 import com.google.api.services.calendar.model.EventReminder;
 
 public class EventHandling {
+	/**
+	 * prijava korisnika
+	 */
 	private static Quickstart quickstart;
+	/**
+	 * google-ov kalendar korisnika
+	 */
 	public static Calendar service;
+	/**
+	 * google-ov kalendar postavljamo da bude primaran da bi se sa njim obavila
+	 * sinhronizacija
+	 */
 	public static String calendarId = "primary";
-
+	
 	public EventHandling() {
 		quickstart = new Quickstart();
 		try {
@@ -80,6 +90,14 @@ public class EventHandling {
 			e.printStackTrace();
 		}
 	}
+
+	/**
+	 * kreira objekte dogadjaja iz JSON objekta
+	 * 
+	 * @param obj
+	 * @return event
+	 * @throws JSONException
+	 */
 
 	public static Event createEvenetObject(JSONObject obj) throws JSONException {
 		String summary = null;
