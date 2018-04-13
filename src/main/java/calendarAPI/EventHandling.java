@@ -86,6 +86,7 @@ public class EventHandling {
 		String summary = null;
 		String location;
 		String description = null;
+
 		String start = null;
 		String end = null;
 		String timezone = "UTC";
